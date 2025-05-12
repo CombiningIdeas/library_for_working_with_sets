@@ -3,7 +3,6 @@ package app
 import (
 	"fmt"
 	"libraryForWorkingWithSets/pkg/library_for_working_with_sets"
-	"os"
 )
 
 func Tests() {
@@ -16,7 +15,6 @@ func Tests() {
 	_, err := fmt.Scan(&capacity)
 	if err != nil {
 		panic(err)
-		os.Exit(1)
 	}
 
 	capacity++
@@ -27,7 +25,7 @@ func Tests() {
 	fmt.Println("Set read from console:")
 	library_for_working_with_sets.PrintSetElements(&set)
 
-	fmt.Println("\n\n\n")
+	fmt.Printf("\n\n\n")
 }
 
 func Library() {
